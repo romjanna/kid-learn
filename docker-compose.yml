@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  postgres:
+    build:
+      context: ./infra/postgres
+      dockerfile: Dockerfile
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: kidlearn
+      POSTGRES_USER: kidlearn
+      POSTGRES_PASSWORD: kidlearn_local
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./infra/scripts/init-db.sql:/docker-entrypoint-initdb.d/01-init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kidlearn"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  ingest:
+    build:
+      context: ./services/ingest
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8000"
+    environment:
+      DATABASE_URL: postgresql://kidlearn:kidlearn_local@postgres:5432/kidlearn
+      REDIS_URL: redis://redis:6379
+      OPENTDB_BASE_URL: https://opentdb.com/api.php
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:

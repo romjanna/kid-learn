@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Introduction to Addition",
+    "subject": "Math",
+    "content": "Addition is one of the basic operations in math. When we add two numbers together, we get a sum. For example, 2 + 3 = 5. Think of it like putting two groups of apples together and counting them all!\n\n## Key Concepts\n- The **plus sign** (+) means we are adding\n- The **equals sign** (=) shows the result\n- The numbers being added are called **addends**\n- The result is called the **sum**\n\n## Examples\n- 1 + 1 = 2\n- 5 + 3 = 8\n- 10 + 7 = 17",
+    "difficulty": "easy",
+    "grade_min": 1,
+    "grade_max": 3
+  },
+  {
+    "title": "Multiplication Tables",
+    "subject": "Math",
+    "content": "Multiplication is a quick way to add the same number many times. Instead of adding 3 + 3 + 3 + 3, we can say 3 × 4 = 12.\n\n## Key Concepts\n- The **times sign** (×) means we are multiplying\n- **Factors** are the numbers being multiplied\n- The result is called the **product**\n\n## Tips for Learning\n- Start with the 2s, 5s, and 10s tables\n- Use patterns: 5s always end in 0 or 5\n- Practice a little every day",
+    "difficulty": "medium",
+    "grade_min": 2,
+    "grade_max": 5
+  },
+  {
+    "title": "The Solar System",
+    "subject": "Science",
+    "content": "Our solar system is made up of the Sun and everything that orbits around it, including eight planets.\n\n## The Planets (in order from the Sun)\n1. **Mercury** - The smallest and closest to the Sun\n2. **Venus** - The hottest planet\n3. **Earth** - Our home! The only planet known to have life\n4. **Mars** - The Red Planet\n5. **Jupiter** - The largest planet\n6. **Saturn** - Famous for its beautiful rings\n7. **Uranus** - It rotates on its side!\n8. **Neptune** - The windiest planet\n\n## Fun Fact\nYou can remember the order with: **M**y **V**ery **E**xcited **M**other **J**ust **S**erved **U**s **N**achos!",
+    "difficulty": "easy",
+    "grade_min": 2,
+    "grade_max": 6
+  },
+  {
+    "title": "Photosynthesis",
+    "subject": "Science",
+    "content": "Photosynthesis is how plants make their own food using sunlight. It's one of the most important processes on Earth!\n\n## How It Works\n1. Plants absorb **sunlight** through their leaves\n2. They take in **carbon dioxide** (CO2) from the air\n3. They absorb **water** from the soil through their roots\n4. Using sunlight energy, they convert these into **glucose** (sugar) and **oxygen**\n\n## The Equation\nSunlight + Water + Carbon Dioxide → Glucose + Oxygen\n\n## Why It Matters\n- Plants produce the **oxygen** we breathe\n- It's the base of most **food chains**\n- It removes **CO2** from the atmosphere",
+    "difficulty": "medium",
+    "grade_min": 3,
+    "grade_max": 8
+  },
+  {
+    "title": "Ancient Egypt",
+    "subject": "History",
+    "content": "Ancient Egypt was one of the greatest civilizations in history, lasting over 3,000 years along the Nile River in Africa.\n\n## Key Facts\n- **Pharaohs** were the rulers of Egypt, considered living gods\n- The **pyramids** were built as tombs for pharaohs\n- **Hieroglyphics** were their writing system using pictures and symbols\n- The **Nile River** was essential for farming, transportation, and daily life\n\n## Famous Pharaohs\n- **Tutankhamun** (King Tut) - The boy king\n- **Cleopatra** - The last pharaoh of Egypt\n- **Ramesses II** - One of the most powerful pharaohs\n\n## Amazing Achievements\n- Built the Great Pyramid of Giza (one of the Seven Wonders)\n- Invented papyrus (an early form of paper)\n- Developed a 365-day calendar",
+    "difficulty": "medium",
+    "grade_min": 3,
+    "grade_max": 8
+  },
+  {
+    "title": "Parts of Speech",
+    "subject": "English",
+    "content": "Every word in the English language belongs to a group called a **part of speech**. Understanding these helps you build better sentences!\n\n## The Main Parts of Speech\n1. **Nouns** - Names of people, places, things, or ideas (dog, school, happiness)\n2. **Verbs** - Action words or states of being (run, jump, is, was)\n3. **Adjectives** - Words that describe nouns (big, red, happy)\n4. **Adverbs** - Words that describe verbs (quickly, very, well)\n5. **Pronouns** - Words that replace nouns (he, she, it, they)\n\n## Examples in Sentences\n- The **big** (adjective) **dog** (noun) **ran** (verb) **quickly** (adverb).\n- **She** (pronoun) **is** (verb) **happy** (adjective).",
+    "difficulty": "easy",
+    "grade_min": 2,
+    "grade_max": 6
+  },
+  {
+    "title": "Continents and Oceans",
+    "subject": "Geography",
+    "content": "Earth's surface is divided into large landmasses called continents and large bodies of water called oceans.\n\n## The 7 Continents\n1. **Asia** - The largest continent\n2. **Africa** - The second largest, home to the Sahara Desert\n3. **North America** - Includes USA, Canada, and Mexico\n4. **South America** - Home to the Amazon Rainforest\n5. **Antarctica** - The coldest continent, covered in ice\n6. **Europe** - Many countries in a small area\n7. **Australia/Oceania** - The smallest continent\n\n## The 5 Oceans\n1. **Pacific Ocean** - The largest and deepest\n2. **Atlantic Ocean** - Separates Americas from Europe/Africa\n3. **Indian Ocean** - The warmest ocean\n4. **Southern Ocean** - Surrounds Antarctica\n5. **Arctic Ocean** - The smallest, around the North Pole",
+    "difficulty": "easy",
+    "grade_min": 2,
+    "grade_max": 6
+  }
+]

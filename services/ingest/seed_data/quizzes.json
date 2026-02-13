@@ -1,0 +1,151 @@
+[
+  {
+    "title": "Basic Addition Quiz",
+    "subject": "Math",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "question_text": "What is 2 + 3?",
+        "options": ["4", "5", "6", "7"],
+        "correct_answer": "5",
+        "explanation": "When we put 2 and 3 together, we count up to 5."
+      },
+      {
+        "question_text": "What is 7 + 5?",
+        "options": ["10", "11", "12", "13"],
+        "correct_answer": "12",
+        "explanation": "7 + 5 = 12. You can count up 5 from 7: 8, 9, 10, 11, 12."
+      },
+      {
+        "question_text": "What is 10 + 10?",
+        "options": ["15", "20", "25", "30"],
+        "correct_answer": "20",
+        "explanation": "10 + 10 = 20. Two groups of ten make twenty!"
+      },
+      {
+        "question_text": "If you have 4 apples and get 3 more, how many do you have?",
+        "options": ["5", "6", "7", "8"],
+        "correct_answer": "7",
+        "explanation": "4 apples + 3 apples = 7 apples total."
+      }
+    ]
+  },
+  {
+    "title": "Solar System Quiz",
+    "subject": "Science",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "question_text": "Which planet is closest to the Sun?",
+        "options": ["Venus", "Mercury", "Earth", "Mars"],
+        "correct_answer": "Mercury",
+        "explanation": "Mercury is the first planet from the Sun and also the smallest."
+      },
+      {
+        "question_text": "Which planet is known as the Red Planet?",
+        "options": ["Jupiter", "Saturn", "Mars", "Venus"],
+        "correct_answer": "Mars",
+        "explanation": "Mars appears red because of iron oxide (rust) on its surface."
+      },
+      {
+        "question_text": "Which is the largest planet in our solar system?",
+        "options": ["Saturn", "Jupiter", "Neptune", "Uranus"],
+        "correct_answer": "Jupiter",
+        "explanation": "Jupiter is so big that over 1,300 Earths could fit inside it!"
+      },
+      {
+        "question_text": "How many planets are in our solar system?",
+        "options": ["7", "8", "9", "10"],
+        "correct_answer": "8",
+        "explanation": "There are 8 planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+      }
+    ]
+  },
+  {
+    "title": "Ancient Egypt Quiz",
+    "subject": "History",
+    "difficulty": "medium",
+    "questions": [
+      {
+        "question_text": "What were the rulers of Ancient Egypt called?",
+        "options": ["Kings", "Pharaohs", "Emperors", "Chiefs"],
+        "correct_answer": "Pharaohs",
+        "explanation": "Egyptian rulers were called Pharaohs and were considered living gods."
+      },
+      {
+        "question_text": "Which river was essential to Ancient Egyptian civilization?",
+        "options": ["Amazon", "Mississippi", "Nile", "Thames"],
+        "correct_answer": "Nile",
+        "explanation": "The Nile River provided water for farming and was the lifeline of Egypt."
+      },
+      {
+        "question_text": "What writing system did Ancient Egyptians use?",
+        "options": ["Alphabet", "Hieroglyphics", "Cuneiform", "Runes"],
+        "correct_answer": "Hieroglyphics",
+        "explanation": "Hieroglyphics used pictures and symbols to represent words and sounds."
+      },
+      {
+        "question_text": "What were the pyramids built for?",
+        "options": ["Homes", "Temples", "Tombs", "Schools"],
+        "correct_answer": "Tombs",
+        "explanation": "The pyramids were built as grand tombs for the pharaohs."
+      }
+    ]
+  },
+  {
+    "title": "Parts of Speech Quiz",
+    "subject": "English",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "question_text": "What part of speech is the word 'dog'?",
+        "options": ["Verb", "Adjective", "Noun", "Adverb"],
+        "correct_answer": "Noun",
+        "explanation": "A noun is a word that names a person, place, thing, or idea. 'Dog' is a thing."
+      },
+      {
+        "question_text": "What part of speech is the word 'run'?",
+        "options": ["Noun", "Verb", "Adjective", "Pronoun"],
+        "correct_answer": "Verb",
+        "explanation": "A verb is an action word. 'Run' describes an action."
+      },
+      {
+        "question_text": "In the sentence 'The big cat slept', which word is an adjective?",
+        "options": ["The", "big", "cat", "slept"],
+        "correct_answer": "big",
+        "explanation": "An adjective describes a noun. 'Big' describes the cat."
+      }
+    ]
+  },
+  {
+    "title": "Continents Quiz",
+    "subject": "Geography",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "question_text": "Which is the largest continent?",
+        "options": ["Africa", "Europe", "Asia", "North America"],
+        "correct_answer": "Asia",
+        "explanation": "Asia is the largest continent by both area and population."
+      },
+      {
+        "question_text": "Which continent is covered in ice?",
+        "options": ["Arctic", "Antarctica", "Australia", "Europe"],
+        "correct_answer": "Antarctica",
+        "explanation": "Antarctica is the coldest continent, almost entirely covered by ice."
+      },
+      {
+        "question_text": "Which is the largest ocean?",
+        "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+        "correct_answer": "Pacific",
+        "explanation": "The Pacific Ocean is the largest and deepest ocean on Earth."
+      },
+      {
+        "question_text": "On which continent is the Amazon Rainforest?",
+        "options": ["Africa", "Asia", "South America", "North America"],
+        "correct_answer": "South America",
+        "explanation": "The Amazon Rainforest is in South America, mostly in Brazil."
+      }
+    ]
+  }
+]
