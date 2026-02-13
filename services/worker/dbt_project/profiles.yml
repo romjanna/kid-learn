@@ -1,0 +1,12 @@
+kid_learn:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('DBT_HOST', 'postgres') }}"
+      port: 5432
+      user: "{{ env_var('DBT_USER', 'kidlearn') }}"
+      password: "{{ env_var('DBT_PASSWORD', 'kidlearn_local') }}"
+      dbname: "{{ env_var('DBT_DBNAME', 'kidlearn') }}"
+      schema: public
+      threads: 2
