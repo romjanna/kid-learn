@@ -1,4 +1,4 @@
-.PHONY: up down build seed logs ps test clean
+.PHONY: up down build seed logs ps test test-ingest test-worker test-api test-all clean
 
 # Start all services
 up:
@@ -42,11 +42,21 @@ ps:
 
 # Run ingest tests
 test-ingest:
-	docker compose exec ingest pytest tests/ -v
+	cd services/ingest && .venv/bin/python -m pytest tests/ -v
 
-# Run all Python tests
-test:
-	docker compose exec ingest pytest tests/ -v
+# Run worker tests
+test-worker:
+	cd services/worker && .venv/bin/python -m pytest tests/ -v
+
+# Run API tests
+test-api:
+	cd services/api && npx jest --verbose
+
+# Run all tests
+test-all: test-ingest test-worker test-api
+
+# Run all Python tests (legacy alias)
+test: test-ingest
 
 # Connect to database
 db:
