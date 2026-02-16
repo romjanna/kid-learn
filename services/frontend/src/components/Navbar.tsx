@@ -32,6 +32,8 @@ export default function Navbar() {
           {user ? (
             <>
               <Link href="/dashboard" className="hover:text-indigo-200">Dashboard</Link>
+              <Link href="/tutor" className="hover:text-indigo-200">Tutor</Link>
+              <Link href="/search" className="hover:text-indigo-200">Search</Link>
               <span className="text-indigo-200 text-sm">{user.display_name}</span>
               <button onClick={handleLogout} className="text-sm bg-indigo-500 px-3 py-1 rounded hover:bg-indigo-400">
                 Logout

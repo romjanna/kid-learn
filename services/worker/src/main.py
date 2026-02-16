@@ -6,6 +6,7 @@ from src.config import settings
 from src.consumers.redis_sub import RedisConsumer
 from src.db.connection import close_pool
 from src.processors.event_processor import process_event
+from src.processors.embedding_processor import generate_all_embeddings
 
 logging.basicConfig(
     level=settings.log_level,
@@ -47,6 +48,13 @@ def main():
     signal.signal(signal.SIGTERM, handle_signal)
 
     logger.info("Worker service starting")
+
+    # Generate embeddings for any content missing them
+    try:
+        generate_all_embeddings()
+    except Exception:
+        logger.exception("Embedding generation failed (continuing without)")
+
     asyncio.run(run())
 
 

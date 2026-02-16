@@ -61,6 +61,17 @@ export const getProgress = (userId: string) => fetchApi(`/api/progress/${userId}
 export const getWeakAreas = (userId: string) => fetchApi(`/api/progress/${userId}/weak-areas`);
 export const getEngagement = (userId: string) => fetchApi(`/api/progress/${userId}/engagement`);
 
+// Search
+export const semanticSearch = (query: string, limit?: number) =>
+  fetchApi('/api/search', { method: 'POST', body: JSON.stringify({ query, limit }) });
+
+// Tutor
+export const getTutorSessions = (token: string) =>
+  fetchApi('/api/tutor/sessions', { token });
+
+export const getTutorSession = (id: string, token: string) =>
+  fetchApi(`/api/tutor/sessions/${id}`, { token });
+
 // GraphQL
 export const graphqlQuery = (query: string, variables?: Record<string, any>) =>
   fetchApi('/graphql', {

@@ -11,6 +11,8 @@ import authRoutes from './routes/auth';
 import quizRoutes from './routes/quizzes';
 import lessonRoutes from './routes/lessons';
 import progressRoutes from './routes/progress';
+import searchRoutes from './routes/search';
+import tutorRoutes from './routes/tutor';
 
 async function main() {
   const app = express();
@@ -28,6 +30,8 @@ async function main() {
   app.use('/api/quizzes', quizRoutes);
   app.use('/api/lessons', lessonRoutes);
   app.use('/api/progress', progressRoutes);
+  app.use('/api/search', searchRoutes);
+  app.use('/api/tutor', tutorRoutes);
 
   // GraphQL
   const apollo = new ApolloServer({ typeDefs, resolvers });

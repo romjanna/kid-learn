@@ -72,6 +72,7 @@ services:
       DATABASE_URL: postgresql://kidlearn:kidlearn_local@postgres:5432/kidlearn
       REDIS_URL: redis://redis:6379
       JWT_SECRET: ${JWT_SECRET:-dev-secret-change-me}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       NODE_ENV: development
     depends_on:
       postgres:
