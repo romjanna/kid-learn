@@ -10,13 +10,20 @@ export default function Navbar() {
   const [user, setUser] = useState<{ display_name: string; role: string } | null>(null);
 
   useEffect(() => {
-    const auth = getStoredAuth();
-    if (auth) setUser(auth.user);
+    const checkAuth = () => {
+      const auth = getStoredAuth();
+      setUser(auth ? auth.user : null);
+    };
+    
+    checkAuth();
+    window.addEventListener('storage', checkAuth);
+    return () => window.removeEventListener('storage', checkAuth);
   }, []);
-
+  
   const handleLogout = () => {
     clearStoredAuth();
     setUser(null);
+    window.dispatchEvent(new Event('storage'));
     router.push('/');
   };
 

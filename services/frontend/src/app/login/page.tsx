@@ -32,8 +32,8 @@ export default function LoginPage() {
         result = await login(form.email, form.password);
       }
       setStoredAuth(result.user, result.token);
+      window.dispatchEvent(new Event('storage'));
       router.push('/quiz');
-      router.refresh();
     } catch (err: any) {
       setError(err.message);
     }

@@ -2,16 +2,15 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { getQuizzes } from '@/lib/api';
+import { graphqlQuery } from '@/lib/api';
 
 interface Quiz {
   id: string;
   title: string;
   difficulty: string;
-  subject_name: string;
-  subject_color: string;
-  question_count: string;
-  source: string;
+  subjectName: string;
+  subjectColor: string;
+  questionCount: string;
 }
 
 const DIFFICULTY_COLORS: Record<string, string> = {
@@ -26,8 +25,19 @@ export default function QuizListPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getQuizzes(filter ? { subject: filter } : undefined)
-      .then(setQuizzes)
+    graphqlQuery(`
+      query ($subject: String) {
+        quizzes(subject: $subject) {
+          id
+          title
+          difficulty
+          subjectName
+          subjectColor
+          questionCount
+        }
+      }
+    `, filter ? { subject: filter } : undefined)
+    .then(response => setQuizzes(response.data.quizzes))
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [filter]);
@@ -61,16 +71,16 @@ export default function QuizListPage() {
                 <div className="flex items-center justify-between mb-3">
                   <span
                     className="text-sm font-medium px-3 py-1 rounded-full"
-                    style={{ backgroundColor: quiz.subject_color + '20', color: quiz.subject_color }}
+                    style={{ backgroundColor: quiz.subjectColor + '20', color: quiz.subjectColor }}
                   >
-                    {quiz.subject_name}
+                    {quiz.subjectName}
                   </span>
                   <span className={`text-xs font-medium px-2 py-1 rounded ${DIFFICULTY_COLORS[quiz.difficulty]}`}>
                     {quiz.difficulty}
                   </span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{quiz.title}</h3>
-                <p className="text-sm text-gray-500">{quiz.question_count} questions</p>
+                <p className="text-sm text-gray-500">{quiz.questionCount} questions</p>
               </div>
             </Link>
           ))}
